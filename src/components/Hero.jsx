@@ -1,6 +1,5 @@
-import { motion } from "framer-motion";
-import { styles } from "../styles.js";
-import { ComputersCanvas } from "./canvas";
+import { styles } from '../styles.js';
+import { ComputersCanvas } from './canvas';
 
 const Hero = () => {
   return (
@@ -17,8 +16,7 @@ const Hero = () => {
             Hello, I'm <span className="text-[#915eff]">Abhiroop</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Full Stack Web <br className="sm:block hidden" /> & Mobile Apps
-            Developer
+            Full Stack Web <br className="sm:block hidden" /> & Mobile Apps Developer
           </p>
         </div>
       </div>
