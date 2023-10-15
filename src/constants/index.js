@@ -15,6 +15,11 @@ import {
   git,
   figma,
   docker,
+  hyperledger,
+  csharp,
+  angular,
+  sql,
+  nextjs,
   meta,
   starbucks,
   tesla,
@@ -61,14 +66,6 @@ const services = [
 
 const technologies = [
   {
-    name: 'HTML 5',
-    icon: html,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
-  },
-  {
     name: 'JavaScript',
     icon: javascript,
   },
@@ -97,20 +94,28 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: 'Three JS',
-    icon: threejs,
+    name: 'C Sharp',
+    icon: csharp,
   },
   {
-    name: 'git',
-    icon: git,
+    name: 'SQL Server',
+    icon: sql,
   },
   {
-    name: 'figma',
-    icon: figma,
+    name: 'Angular',
+    icon: angular,
   },
   {
     name: 'docker',
     icon: docker,
+  },
+  {
+    name: 'Hyperledger',
+    icon: hyperledger,
+  },
+  {
+    name: 'Next JS',
+    icon: nextjs,
   },
 ];
 
