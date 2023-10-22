@@ -17,8 +17,51 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_sgl96ne",
+        "template_duj8c0e",
+        {
+          from_name: form.name,
+          to_name: "Abhiroop Santra",
+          from_email: form.email,
+          to_email: "abhiroop.santra@gmail.com",
+          message: form.message,
+        },
+        "SMrjZuh5gotQxCfrE",
+      )
+      .then(
+        () => {
+          setLoading(false);
+
+          // TODO: change to a toast or sweetalert
+          alert("Thank you. I will get back to you soon.");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+
+          // TODO: refactor to use toast
+          alert("Something wnd wrong.");
+        },
+      );
+  };
 
   // TODO: Implement captcha before submitting form
 
