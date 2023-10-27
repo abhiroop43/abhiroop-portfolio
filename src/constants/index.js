@@ -221,16 +221,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Chat Level 9k",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "AI powered chat application built with Next.js, Tailwind, Prisma, MySQL and OpenAI that allows users to generate content, write code, generate images, sounds and videos too.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "mysql",
         color: "green-text-gradient",
       },
       {
@@ -240,14 +240,15 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/",
+    application_link: "https://chat.abhiroopsantra.dev/",
   },
   {
-    name: "Job IT",
+    name: "Expense Tracker",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "The Expense Tracker is a mobile app built with React Native to manage your expenses and also give you a heads-up of upcoming expenses.",
     tags: [
       {
-        name: "react",
+        name: "react-native",
         color: "blue-text-gradient",
       },
       {
@@ -255,33 +256,35 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "firebase",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/abhiroop43/expense-tracker",
+    application_link: null,
   },
   {
-    name: "Trip Guide",
+    name: "3D Portfolio",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "My personal portfolio website built using Next.js, Tailwind and Three.js.",
     tags: [
       {
-        name: "nextjs",
+        name: "next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "three.js",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
+    application_link: "https://abhiroopsantra.dev/",
   },
 ];
 
