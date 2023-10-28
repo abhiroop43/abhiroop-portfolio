@@ -33,6 +33,9 @@ import {
   adcb,
   gcaa,
   adpg,
+  chatlevel9k,
+  portfolio,
+  redditnext,
 } from "../assets";
 
 export const navLinks = [
@@ -238,14 +241,14 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: chatlevel9k,
     source_code_link: "https://github.com/",
     application_link: "https://chat.abhiroopsantra.dev/",
   },
   {
-    name: "Expense Tracker",
+    name: "Reddit Next",
     description:
-      "The Expense Tracker is a mobile app built with React Native to manage your expenses and also give you a heads-up of upcoming expenses.",
+      "The Reddit Next app is a concept of how Reddit should look like in the modern days.",
     tags: [
       {
         name: "react-native",
@@ -260,7 +263,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: redditnext,
     source_code_link: "https://github.com/abhiroop43/expense-tracker",
     application_link: null,
   },
@@ -282,7 +285,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: portfolio,
     source_code_link: "https://github.com/",
     application_link: "https://abhiroopsantra.dev/",
   },

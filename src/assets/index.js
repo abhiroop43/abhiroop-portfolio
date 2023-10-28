@@ -34,6 +34,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import chatlevel9k from "./chatlevel9k.png";
+import portfolio from "./3dportfolio.png";
+import redditnext from "./reddit-next.png";
 
 import wipro from "./company/wipro_large.png";
 import dohabank from "./company/dohabank.png";
@@ -75,6 +78,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  chatlevel9k,
+  portfolio,
+  redditnext,
   wipro,
   dohabank,
   adcb,
