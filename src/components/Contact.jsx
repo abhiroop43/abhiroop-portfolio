@@ -2,11 +2,13 @@ import React from "react";
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+// import { verifyCaptcha } from "../utils/serverActions.js";
 
 const Contact = () => {
   const formRef = useRef();
@@ -15,6 +17,9 @@ const Contact = () => {
     email: "",
   });
 
+  const recaptchaRef = useRef(null);
+  const [isVerified, setIsVerified] = useState(false);
+
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -22,9 +27,24 @@ const Contact = () => {
 
     setForm({ ...form, [name]: value });
   };
+
+  // const handleCaptchaSubmission = async (token) => {
+  //   // Server function to verify captcha
+  //   await verifyCaptcha(token)
+  //     .then(() => setIsVerified(true))
+  //     .catch(() => setIsVerified(false));
+  // };
+
+  const onChange = (value) => {
+    setIsVerified(true);
+    console.log("captcha value: ", value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    const token = recaptchaRef.current.getValue();
+    console.log(token);
+    recaptchaRef.current.reset();
     setLoading(true);
 
     emailjs
@@ -115,8 +135,14 @@ const Contact = () => {
             />
           </label>
 
+          <ReCAPTCHA
+            sitekey="6Ldp9tUoAAAAAK15W6mfsmZjPpOmAN4y400jxLdQ"
+            ref={recaptchaRef}
+            onChange={onChange}
+          />
           <button
             type="submit"
+            disabled={!isVerified}
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
             {loading ? "Sending...." : "Send"}
