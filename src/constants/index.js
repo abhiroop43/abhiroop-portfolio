@@ -264,7 +264,7 @@ const projects = [
       },
     ],
     image: redditnext,
-    source_code_link: "https://github.com/abhiroop43/expense-tracker",
+    source_code_link: "https://github.com/abhiroop43/reddit-next",
     application_link: null,
   },
   {
