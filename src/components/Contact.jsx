@@ -8,7 +8,6 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-// import { verifyCaptcha } from "../utils/serverActions.js";
 
 const Contact = () => {
   const formRef = useRef();
@@ -28,16 +27,9 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  // const handleCaptchaSubmission = async (token) => {
-  //   // Server function to verify captcha
-  //   await verifyCaptcha(token)
-  //     .then(() => setIsVerified(true))
-  //     .catch(() => setIsVerified(false));
-  // };
-
-  const onChange = (value) => {
+  const onCaptchaFill = (value) => {
     setIsVerified(true);
-    console.log("captcha value: ", value);
+    // console.log("captcha value: ", value);
   };
 
   const handleSubmit = (e) => {
@@ -72,6 +64,8 @@ const Contact = () => {
             email: "",
             message: "",
           });
+
+          setIsVerified(false);
         },
         (error) => {
           setLoading(false);
@@ -138,7 +132,8 @@ const Contact = () => {
           <ReCAPTCHA
             sitekey="6Ldp9tUoAAAAAK15W6mfsmZjPpOmAN4y400jxLdQ"
             ref={recaptchaRef}
-            onChange={onChange}
+            onChange={onCaptchaFill}
+            theme="dark"
           />
           <button
             type="submit"

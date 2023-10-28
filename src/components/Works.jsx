@@ -2,7 +2,7 @@ import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, externallink } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -15,6 +15,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  application_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -30,28 +31,31 @@ const ProjectCard = ({
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "blank")}
-              className="mx-1 black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
+            {source_code_link && (
+              <div
+                onClick={() => window.open(source_code_link, "blank")}
+                className="mx-1 black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            )}
 
-            {/*TODO: Create another div and img for the live URL*/}
-            {/*<div*/}
-            {/*  onClick={() => window.open(link, "blank")}*/}
-            {/*  className="mx-1 black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"*/}
-            {/*>*/}
-            {/*  <img*/}
-            {/*    src={github}*/}
-            {/*    alt="github"*/}
-            {/*    className="w-1/2 h-1/2 object-contain"*/}
-            {/*  />*/}
-            {/*</div>*/}
+            {application_link && (
+              <div
+                onClick={() => window.open(application_link, "blank")}
+                className="mx-1 black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={externallink}
+                  alt="external"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            )}
           </div>
         </div>
 

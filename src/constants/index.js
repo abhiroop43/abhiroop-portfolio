@@ -242,7 +242,7 @@ const projects = [
       },
     ],
     image: chatlevel9k,
-    source_code_link: "https://github.com/",
+    source_code_link: null,
     application_link: "https://chat.abhiroopsantra.dev/",
   },
   {
@@ -286,7 +286,7 @@ const projects = [
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/",
+    source_code_link: null,
     application_link: "https://abhiroopsantra.dev/",
   },
 ];
