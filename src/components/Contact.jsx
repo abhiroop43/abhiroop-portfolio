@@ -8,6 +8,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const formRef = useRef();
@@ -56,8 +57,12 @@ const Contact = () => {
         () => {
           setLoading(false);
 
-          // TODO: change to a toast or sweetalert
-          alert("Thank you. I will get back to you soon.");
+          toast("Thank you. I will get back to you soon.", {
+            toastId: 1,
+            progressStyle: {
+              background: "#804dee",
+            },
+          });
 
           setForm({
             name: "",
@@ -71,13 +76,14 @@ const Contact = () => {
           setLoading(false);
           console.log(error);
 
-          // TODO: refactor to use toast
-          alert("Something wnd wrong.");
+          toast("Something went wrong. Please try again later", {
+            toastId: 1,
+            type: "error",
+            theme: "colored",
+          });
         },
       );
   };
-
-  // TODO: Implement captcha before submitting form
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
