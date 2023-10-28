@@ -21,15 +21,28 @@ const Contact = () => {
   const [isVerified, setIsVerified] = useState(false);
 
   const [loading, setLoading] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
 
     setForm({ ...form, [name]: value });
+    console.log(captchaToken);
+    if (form.name && form.email && form.message && captchaToken) {
+      // console.log("form filled");
+      setIsVerified(true);
+    } else {
+      setIsVerified(false);
+    }
   };
 
   const onCaptchaFill = (value) => {
-    setIsVerified(true);
+    if (form.name && form.email && form.message) {
+      setIsVerified(true);
+    } else {
+      setIsVerified(false);
+    }
+    setCaptchaToken(recaptchaRef.current.getValue());
     // console.log("captcha value: ", value);
   };
 
@@ -144,7 +157,10 @@ const Contact = () => {
           <button
             type="submit"
             disabled={!isVerified}
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className={`${
+              !isVerified ? "bg-gray-500" : "bg-tertiary"
+            } py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl`}
+            // className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
             {loading ? "Sending...." : "Send"}
           </button>
