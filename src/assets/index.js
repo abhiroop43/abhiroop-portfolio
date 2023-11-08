@@ -38,6 +38,7 @@ import tripguide from "./tripguide.png";
 import chatlevel9k from "./chatlevel9k.png";
 import portfolio from "./3dportfolio.png";
 import redditnext from "./reddit-next.png";
+import beanbuzz from "./beanbuzz.png";
 
 import wipro from "./company/wipro_large.png";
 import dohabank from "./company/dohabank.png";
@@ -83,6 +84,7 @@ export {
   chatlevel9k,
   portfolio,
   redditnext,
+  beanbuzz,
   wipro,
   dohabank,
   adcb,

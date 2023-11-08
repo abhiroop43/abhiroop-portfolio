@@ -36,6 +36,7 @@ import {
   chatlevel9k,
   portfolio,
   redditnext,
+  beanbuzz,
 } from "../assets";
 
 export const navLinks = [
@@ -246,9 +247,9 @@ const projects = [
     application_link: "https://chat.abhiroopsantra.dev/",
   },
   {
-    name: "Reddit Next",
+    name: "Bean Buzz",
     description:
-      "The Reddit Next app is a concept of how Reddit should look like in the modern days.",
+      "A mobile app designed to order speciality coffee from local coffee shops.",
     tags: [
       {
         name: "react-native",
@@ -263,8 +264,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: redditnext,
-    source_code_link: "https://github.com/abhiroop43/reddit-next",
+    image: beanbuzz,
+    source_code_link: "https://github.com/abhiroop43/beanbuzz",
     application_link: null,
   },
   {
