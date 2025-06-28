@@ -37,258 +37,254 @@ import {
   portfolio,
   redditnext,
   beanbuzz,
-} from "../assets";
+  flutterexpensetracker,
+  leavemanagement,
+} from '../assets';
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: 'about',
+    title: 'About',
   },
   {
-    id: "work",
-    title: "Work",
+    id: 'work',
+    title: 'Work',
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: 'contact',
+    title: 'Contact',
   },
 ];
 
 const services = [
   {
-    title: "Technical Lead",
+    title: 'Development Manager',
     icon: web,
   },
   {
-    title: "Full Stack Web Developer",
+    title: 'Product Manager',
     icon: mobile,
   },
   {
-    title: "React Native Developer",
+    title: 'Application Architect',
     icon: backend,
   },
   {
-    title: "AI/ML Engineer",
+    title: 'Web & Mobile Developer',
     icon: creator,
   },
 ];
 
 const technologies = [
   {
-    name: "JavaScript",
+    name: 'JavaScript',
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: 'TypeScript',
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: 'React JS',
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: 'Redux Toolkit',
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: 'Tailwind CSS',
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: 'Node JS',
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: 'MongoDB',
     icon: mongodb,
   },
   {
-    name: "C Sharp",
+    name: 'C Sharp',
     icon: csharp,
   },
   {
-    name: "SQL Server",
+    name: 'SQL Server',
     icon: sql,
   },
   {
-    name: "Angular",
+    name: 'Angular',
     icon: angular,
   },
   {
-    name: "docker",
+    name: 'docker',
     icon: docker,
   },
   {
-    name: "Hyperledger",
+    name: 'Hyperledger',
     icon: hyperledger,
   },
   {
-    name: "Next JS",
+    name: 'Next JS',
     icon: nextjs,
   },
 ];
 
 const experiences = [
   {
-    title: "Software Engineering Lead",
-    company_name: "Abu Dhabi Ports Group",
+    title: 'Product Development Manager',
+    company_name: 'Abu Dhabi Ports Group',
     icon: adpg,
-    iconBg: "#fff",
-    date: "October 2017 - Present",
+    iconBg: '#fff',
+    date: 'October 2017 - Present',
     points: [
-      "Managing a cross-functional team of several Developers and QAs.",
-      "Collaborating with stakeholders to deliver high-quality software products.",
-      "Mentoring team members to improve operational efficiency.",
-      "Participating in code reviews and leading the system design.",
+      'Managing a cross-functional team of several Developers and QAs.',
+      'Collaborating with stakeholders to deliver high-quality software products.',
+      'Preparing solution design and application architecture.',
+      'Building product roadmaps.',
     ],
   },
   {
-    title: "Senior Software Engineer",
-    company_name: "UAE General Civil Aviation Authority",
+    title: 'Senior Software Engineer',
+    company_name: 'UAE General Civil Aviation Authority',
     icon: gcaa,
-    iconBg: "#fff",
-    date: "July 2015 - September 2017",
+    iconBg: '#fff',
+    date: 'July 2015 - September 2017',
     points: [
-      "Leading the team to implement full stack web and mobile solutions using .NET, Angular and React Native.",
+      'Leading the team to implement full stack web and mobile solutions using .NET, Angular and React Native.',
       "Developing the organization's intranet portal using Microsoft SharePoint.",
-      "Streamline the application testing process through automated unit testing to enhance code quality and reduce defects.",
-      "Implement business processes through Nintex and K2 BlackPearl.",
+      'Streamline the application testing process through automated unit testing to enhance code quality and reduce defects.',
+      'Implement business processes through Nintex and K2 BlackPearl.',
     ],
   },
   {
-    title: "Systems Analyst",
-    company_name: "Abu Dhabi Commercial Bank",
+    title: 'Systems Analyst',
+    company_name: 'Abu Dhabi Commercial Bank',
     icon: adcb,
-    iconBg: "#fff",
-    date: "December 2013 - July 2015",
+    iconBg: '#fff',
+    date: 'December 2013 - July 2015',
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      'Developing and maintaining web applications using React.js and other related technologies.',
+      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
   {
-    title: "Software Engineer",
-    company_name: "Doha Bank",
+    title: 'Software Engineer',
+    company_name: 'Doha Bank',
     icon: dohabank,
-    iconBg: "#fff",
-    date: "September 2012 - December 2013",
+    iconBg: '#fff',
+    date: 'September 2012 - December 2013',
     points: [
-      "End to end development and maintenance the Internet Banking and eRemittance System of the bank.",
-      "Work closely with the Support Team to resolve any pending tickets from the customers.",
-      "Implementing integrations with external systems and APIs through Tibco Middleware.",
-      "Improve application quality and performance by adhering to modern coding standards and best practices.",
+      'End to end development and maintenance the Internet Banking and eRemittance System of the bank.',
+      'Work closely with the Support Team to resolve any pending tickets from the customers.',
+      'Implementing integrations with external systems and APIs through Tibco Middleware.',
+      'Improve application quality and performance by adhering to modern coding standards and best practices.',
     ],
   },
   {
-    title: "Project Engineer",
-    company_name: "Wipro Technologies",
+    title: 'Project Engineer',
+    company_name: 'Wipro Technologies',
     icon: wipro,
-    iconBg: "#fff",
-    date: "June 2011 - September 2012",
+    iconBg: '#fff',
+    date: 'June 2011 - September 2012',
     points: [
-      "Develop full stack web solutions using ASP.NET MVC.",
-      "Developing intranet portals for stakeholders using Microsoft SharePoint and InfoPath.",
-      "Map and implement complex business processes using Nintex Workflows.",
-      "Supported the integration of third party APIs for data exchange between the applications.",
+      'Develop full stack web solutions using ASP.NET MVC.',
+      'Developing intranet portals for stakeholders using Microsoft SharePoint and InfoPath.',
+      'Map and implement complex business processes using Nintex Workflows.',
+      'Supported the integration of third party APIs for data exchange between the applications.',
     ],
   },
 ];
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    testimonial: 'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
+    name: 'Sara Lee',
+    designation: 'CFO',
+    company: 'Acme Co',
+    image: 'https://randomuser.me/api/portraits/women/4.jpg',
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: 'Chris Brown',
+    designation: 'COO',
+    company: 'DEF Corp',
+    image: 'https://randomuser.me/api/portraits/men/5.jpg',
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: 'Lisa Wang',
+    designation: 'CTO',
+    company: '456 Enterprises',
+    image: 'https://randomuser.me/api/portraits/women/6.jpg',
   },
 ];
 
 const projects = [
   {
-    name: "Chat Level 9k",
-    description:
-      "AI powered chat application built with Next.js, Tailwind, Prisma, MySQL and OpenAI that allows users to generate content, write code, generate images, sounds and videos too.",
+    name: 'Expense Tracker',
+    description: 'An expense tracker app developed with Flutter and Dart',
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: 'flutter',
+        color: 'blue-text-gradient',
       },
       {
-        name: "mysql",
-        color: "green-text-gradient",
+        name: 'bloc-architecture',
+        color: 'green-text-gradient',
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: 'dart',
+        color: 'pink-text-gradient',
       },
     ],
-    image: chatlevel9k,
-    source_code_link: null,
-    application_link: "https://chat.abhiroopsantra.dev/",
+    image: flutterexpensetracker,
+    source_code_link: 'https://github.com/abhiroop43/flutter-expense-tracker',
+    application_link: 'https://github.com/abhiroop43/flutter-expense-tracker/releases',
   },
   {
-    name: "Bean Buzz",
-    description:
-      "A mobile app designed to order speciality coffee from local coffee shops.",
+    name: 'Leave Mgmt. System',
+    description: 'An enterprise Leave Management System using DDD, CQRS and Clean Architecture',
     tags: [
       {
-        name: "react-native",
-        color: "blue-text-gradient",
+        name: '.net',
+        color: 'blue-text-gradient',
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        name: 'sql-server',
+        color: 'green-text-gradient',
       },
       {
-        name: "firebase",
-        color: "pink-text-gradient",
+        name: 'azure',
+        color: 'pink-text-gradient',
       },
     ],
-    image: beanbuzz,
-    source_code_link: "https://github.com/abhiroop43/beanbuzz",
-    application_link: null,
+    image: leavemanagement,
+    source_code_link: 'https://gitlab.com/dotnet-practice-abhiroop43/leave-management',
+    application_link: 'https://leavemanagement-api-hyg7d6e2f2f7gtgf.eastus2-01.azurewebsites.net/swagger/index.html',
   },
   {
-    name: "3D Portfolio",
-    description:
-      "My personal portfolio website built using Next.js, Tailwind and Three.js.",
+    name: '3D Portfolio',
+    description: 'My personal portfolio website built using Next.js, Tailwind and Three.js.',
     tags: [
       {
-        name: "next.js",
-        color: "blue-text-gradient",
+        name: 'next.js',
+        color: 'blue-text-gradient',
       },
       {
-        name: "three.js",
-        color: "green-text-gradient",
+        name: 'three.js',
+        color: 'green-text-gradient',
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: 'tailwind',
+        color: 'pink-text-gradient',
       },
     ],
     image: portfolio,
     source_code_link: null,
-    application_link: "https://abhiroopsantra.dev/",
+    application_link: 'https://abhiroopsantra.dev/',
   },
 ];
 
