@@ -34,11 +34,11 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
       <motion.p variants={fadeIn('', '', 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        As a seasoned Software Engineer, I have a comprehensive skill set in full stack development for web and mobile
-        applications. My proficiency in .NET, Angular, React, NodeJS, NextJS, SQL Server, MongoDB and React Native
-        allows me to architect and implement robust solutions that meet client requirements. With a track record of
-        delivering successful projects, I also have experience in blockchain and AI development, bringing cutting-edge
-        technologies to a wide range of industries.
+        As a seasoned Product Development Manager and Application Architect, I have a comprehensive skill set in full
+        stack development for web and mobile applications. My proficiency in .NET, Angular, React, NodeJS, NextJS, SQL
+        Server, MongoDB and Flutter allows me to architect and implement robust solutions that meet client requirements.
+        With a track record of delivering successful projects, I also have experience in blockchain and AI development,
+        bringing cutting-edge technologies to a wide range of industries.
       </motion.p>
 
       <div className="flex flex-wrap gap-10 mt-20">
